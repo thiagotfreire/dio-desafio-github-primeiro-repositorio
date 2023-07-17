@@ -5,4 +5,4 @@ Repositório criado para o Desafio de Projeto
 [Sintaxe Básica Markdown] (https://www.markdownguide.org/basic-syntax/)
 
 ## O que há nesse repositório?
-Materiais dos cursos e conteúdos relevantes do meu primeimro Bootcamp "Primeiros Passos em Tecnologia"
+Materiais dos cursos e conteúdos relevantes do meu primeiro Bootcamp "Primeiros Passos em Tecnologia"
