@@ -1,0 +1,56 @@
+Ferramentas Utilizadas
+- html:5
+
+Inspetor de Elementos
+- No Chrome, F12
+- CSS deixa bonito o HTML
+
+Estrutura Básica do HTML
+Basicamente 3 partes: html, head, body
+Body: Entre o corpo são coisas que aparecem para o usuario
+Head: coisas que carrega antes de aparecer para o usuario
+
+Falando sobre Tags
+i: Italico
+strong: Negrito
+Tem tag que nao tem tag de fechamento (exemplo input, img)
+
+Atributos das Tags
+São propriedades que as tags podem ter
+Genéricos:
+id: identificador (ajuda no JavaScript)
+style: ajuda principalmente no CSS
+class: ajuda no CSS
+Especificos:
+type no input, principalmente text e number
+src no img (coloca caminho da internet ou do pc)
+width no img: largura
+
+Textos
+São tipografias HTML
+Tags:
+h1: titulo maior
+h2: subtitulo, é menor que h1
+p: paragrafo
+blockquote: citação
+u: underline
+mark: marca texto em amarelo
+sup: texto elevado
+Na W3schools.com tem referencias do HTML 
+
+Listas Ordenadas e Não Ordenadas
+Listas Ordenadas
+ol: tag pai
+li: tag filha
+Listas Não Ordenadas
+ul: tag pai
+li: tag filha
+
+Links
+a href: coloca link e depois o que estará escrito
+target="_blank": dentro da a para abrir em uma nova aba
+title: coloca um comentário para quando mouse tiver em cima
+Em nosso site tem que abrir na mesma aba e para sites de terceiros abrir em outra aba
+
+
+

@@ -1,0 +1,96 @@
+ANOTACOES ANTERIORES
+Ferramentas Utilizadas
+- Visual Studio Code (explorador e extensões)
+- Extensão Live Server
+- Plugin Emmet (já vem no VS Code): html:5 (padrão definido)
+- Navegador Chrome: tem ferramentas exclusivas que ajuda no desenvolvimento de páginas 
+
+Inspetor de Elementos
+- Inspetor de Elementos é a ferramenta do desenvolvedor. 
+- No Chrome é F12
+- Tem vários tipos recursos para se saber como qualquer página foi criada.
+- CSS formata, deixa bonito o HTML
+- Serve para estudo
+
+Estrutura Básica do HTML
+- Antes de começar um projeto, criar uma pasta que será dedicada ao projeto. Depois no VS Code vai em Arquivo, Abrir Pasta e seleciona a pasta
+- Para começar o projeto: Novo arquivo e dê o nome de index.html
+- Index é padrao de inicio, é a pagina principal do site. É uma convenção.
+Basicamente 3 partes: html, head, body
+Html: principal pois tudo que está dentro é html
+Body: Entre o corpo são coisas que aparecem para o usuario
+Head: coisas que carrega antes de aparecer para o usuario. <title> é o titulo da pagina
+Quando aparece uma bolinha ao lado do nome do arquivo significa que é preciso salvar. Atalho Ctrl+S
+Com botao direito, dá pra abrir com Live Server
+
+Falando sobre Tags
+i: Italico
+strong: Negrito
+A maioria das tags tem que abrir e fechar
+Porem Tem tag que nao tem tag de fechamento (exemplo input, img)
+Atributos são configurações que aparecem depois do nome da tag para aparecer diferente no navegador
+
+Atributos das Tags
+São propriedades que as tags podem ter
+Genéricos:
+id: identificador do elemento. (ajuda no JavaScript)
+style: ajuda principalmente no CSS
+class: ajuda no CSS
+Especificos:
+type no input, principalmente text e number
+src no img (coloca caminho da internet ou do pc)
+width no img: largura
+
+Textos
+São tipografias que o usuario lÊ
+São tipografias HTML
+Tags:
+h1: titulo maior
+h2: subtitulo, é menor que h1
+p: paragrafo
+blockquote: citação
+u: underline
+mark: marca texto em amarelo
+sup: texto elevado
+Na W3schools.com tem referencias do HTML 
+
+Listas Ordenadas e Não Ordenadas
+Dois tipos
+Listas Ordenadas com numeros
+ol: tag pai
+li: tag filha
+Listas Não Ordenadas com marcadores
+ul: tag pai
+li: tag filha
+
+Links
+Servem para navegar na internet ou no próprio site
+a é uma ancora para ir para algum lugar
+a href: coloca link e depois o que estará escrito
+target="_blank": dentro da a para abrir em uma nova aba
+self na propria aba
+title: coloca um comentário para quando mouse tiver em cima
+Recomendado: Em nosso site tem que abrir na mesma aba e para sites de terceiros abrir em outra aba
+---------------------------------------------------------------------------------------
+ANOTACOES ATUAIS
+hr: linha separadora
+Ancoragem:
+href="#X"
+h2 id="X"
+small: texto pequeno
+
+DESAFIO
+Pegar todo conteúdo estudado do curso, fazer índices por aula, colocar subtitulos, botões pra voltar, escrever com minhas palavras no texto o que entendi sobre cada assunto como se estivesse ensinando alguem. Criar um titulo com linha separadora, com indice com links que redirecionam e ultimo item como Referências com links de matérias, videos no YouTube que falem sobre HTML e sobre o que aprendi.
+Utilizar todas as tags <h1> até <h6>, <p>, <mark>, <small>, <i>, <u>, <strong>, <ol>, <ul>, <li>, <a>, <hr>, <sub>, <sup>, <blockquote>; Utilizar novas tags sugeridas: <font>, <del>, <p>, <abbr> (a ideia é buscar estas tags na internet, entender como ela funciona e utilizar no texto).
+
+REFERENCIAS
+https://pt.wikipedia.org/wiki/Visual_Studio_Code
+https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#:~:text=A%20tag%20cont%C3%A9m%20metadados,conte%C3%BAdo%20que%20aparece%20na%20p%C3%A1gina.
+https://pt.wikipedia.org/wiki/Elemento_HTML
+https://tableless.github.io/iniciantes/manual/html/oquetags.html
+https://www.htmlprogressivo.net/2013/08/font-tag-Como-alterar-a-fonte-tamanho-e-cor-de-textos-de-um-website.html
+https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/del
+https://www.totvs.com/blog/developers/o-que-e-html/#:~:text=Sigla%20para%20HyperText%20Markup%20Language,v%C3%ADdeos%2C%20por%20meio%20dos%20hipertextos.
+
+
+

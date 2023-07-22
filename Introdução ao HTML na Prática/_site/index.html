@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página - Anotações sobre o Curso "Introdução ao HTML na Prática"</title>
+</head>
+<body>
+    <h1><sub>- </sub><font face="Arial">Anotações sobre o Curso "Introdução ao HTML na Prática"</font><sub> -</sub></h1>
+        <hr>
+        <h2><a id="voltar">Índice</a></h2>
+        <ul>
+            <li><a href="#ferramentas">Ferramentas</a></li>    
+            <li><a href="#dica">Dica para estudar ou se inspirar</a></li> 
+            <li><a href="#comecando">Começando um projeto do zero</a></li>    
+            <li><a href="#conhecendo">Conhecendo melhor as tags</a></li> 
+            <li><a href="#atributos">Alguns atributos das tags</a></li>    
+            <li><a href="#tags">Mais tags de textos</a></li> 
+            <li><a href="#listas">Tipos de listas</a></li>    
+            <li><a href="#links">Links e suas possibilidades</a></li>
+            <li><a href="#aprofundando">Se aprofundando, principalmente nos Links</a></li> 
+            <li><a href="#referencias">Links de Referências</a></li> 
+            <li><a href="#praticando">Praticando novas tags</a></li>
+        </ul>
+        <h3 id="ferramentas">Ferramentas</h3>
+        <small><a href="#voltar">(voltar)</a></small>
+        <p>
+            Existem duas ferramentas que são extremamente necessárias para se fazer páginas em HTML: um <u>editor de código fonte</u>
+            e um <u>navegador</u>. 
+            <p> O professor Diogo Mainardes indica, respectivamente, o <strong>Visual Studio Code</strong> e o <strong>Google Chrome</strong>, até porque o
+            primeiro permite o uso de extensões e o segundo possui ferramentas exclusivas que ajudam no desenvolvimento de 
+            páginas.</p>
+            <p>No Visual Studio Code é importante instalar a extensão <i>Live Server</i>, pois ela permite com um simples atalho abrir
+            uma página no navegador e sempre quando o código fonte é salvo as alterações já aparecem em tal página de maneira
+            instantânea. </p>
+            Outro recurso interessante que já vem instalado no Visual Studio Code, também conhecido como VS Code, é o plugin <strong>Emmet</strong> que é acionado
+            quando se escreve em um novo arquivo do editor a sintaxe "<u>html:5</u>". Ao fazer isso, o plugin traz um padrão definido
+            para iniciar qualquer página de HMTL. 
+        </p>
+
+        <h3 id="dica">Dica para estudar ou se inspirar</h3>
+        <small><a href="#voltar">(voltar)</a></small>
+        <p>Outro ponto positivo do navegador é utilizar a <strong>Ferramenta do Desenvolvedor</strong> para inspecionar os elementos de qualquer
+            página. No Google Chrome é possível acessá-la pelo atalho F12. 
+            <p>Nesta ferramenta encontram-se vários recursos para se
+            saber como uma página foi criada em termos de <u>código</u> e <u>formatação</u>.</p> 
+            <p>Essa dica é importante para estudo e inspiração
+            para desenvolvedores de HTML e também de CSS, que é a linguagem de programação que formata esteticamente o HTML.
+        </p>
+        </p>
+
+        <h3 id="comecando">Começando um projeto do zero</h3>
+        <small><a href="#voltar">(voltar)</a></small>
+        <p>Antes de começar um projeto, é importantíssimo criar no computador uma pasta dedicada ao mesmo. Após a criação, esta pasta
+           deve ser selecionada no Visual Studio Code clicando em Arquivo, Abrir Pasta. Tal diretório aparecerá no VS Code na coluna à 
+           esquerda chamada Explorador e do lado do seu nome, no primeiro ícone, é possível criar um novo arquivo para começar a desenvolver 
+           a página principal, que é popularmente conhecida como <u>index.html</u>.</p>
+           Para começar o projeto, existem basicamente 3 partes (tags) que <strong>não podem faltar</strong>: HTML, <i>head</i> e <i>body</i>.
+           <p>A HTML é a principal, pois tudo tem que ser feito dentro dela.</p> 
+           <p>A head contém o título da página. Para tanto, é necessário usar também a tag <u>title</u>.</p> 
+           <p>Já a body é onde encontra-se todo conteúdo que aparece na tela para o usuário.</p>
+           <p>O interessante é que conforme o desenvolvedor vai digitando no arquivo, uma <strong>bolinha branca</strong> aparece ao lado do título do arquivo. Essa bolinha
+           indica a necessidade de salvar o arquivo. Para salvar, é só usar o atalho Ctrl+S.</p>
+           <p>Por fim, para ver em tempo real como a página está ficando, é só clicar com botão direito no nome do arquivo que consta no Explorador e
+           selecionar a opção <u>Abrir com Live Server</u>.
+        </p>
+
+        <h3 id="conhecendo">Conhecendo melhor as tags</h3>
+        <small><a href="#voltar">(voltar)</a></small>
+        <p>As tags são elementos HTML que fazem parte de uma página da internet e servem principalmente para formatar os textos.
+           A <i>tag i é itálico</i> e <strong>strong é negrito</strong>. </p>
+           <p>Outro ponto relevante é que a maioria das tags tem que abrir e fechar, porém tem tag que <u>não tem fechamento</u>, tais como
+           input, img.</p>
+           <p>Além das funções primárias, algumas tags podem ser acompanhadas de atributos que são configurações digitadas depois
+           do nome da tag para que os elementos apareçam cada vez mais diferentes no navegador.</p>
+
+        <h3 id="atributos">Alguns atributos das tags</h3>   
+        <small><a href="#voltar">(voltar)</a></small>
+        <p>Os atributos são <u>propriedades que as tags podem ter na exibição no navegador</u>. Eles são divididos em <strong>globais</strong> (funcionam em todas as tags)
+           e <strong>específicos</strong> (funcionam em algumas tags).</p>
+        <h4>Atributos globais</h4>
+        <p>São exemplos de atributos globais: id (identificador de elemento, ajuda na formatação via JavaScript), 
+           style e class (ajudam na formatação via CSS). O style acompanhado da sintaxe color definirá uma cor.</p>
+        <h4>Atributos específicos</h4>    
+        <p>São exemplos de atributos específicos: type no input (principalmente text e number), src no img (serve para informar um caminho de uma imagem
+           na internet ou no computador) e width no img (ajusta a largura da imagem). Ao usar o type text ou number no input, o campo do formulário só permitirá,
+           respectivamente, letras ou números.</p>
+
+        <h3 id="tags">Mais tags de textos</h3>
+        <small><a href="#voltar">(voltar)</a></small>
+        <p>Textos são tipografias que o usuário lê. No site <i>w3schools.com</i><sup>*</sup> consta uma infinidade dessas tags, porém destaco as seguintes: </p>
+        <h4>h1 à h6</h4>
+        <p>As tags h1 à h6 servem para escrever <u>título</u> e <u>subtítulos</u>, tendo o h1 uma fonte maior e, sucessivamente, o h6 uma fonte menor que todos os outros.</p>
+        <h4>p</h4>
+        <p>O p é para separar o texto em <u>parágrafos</u>. Caso contrário, ficaria tudo em um único parágrafo, o que dificultaria bastante a leitura. </p>
+        <h4>blockquote</h4>
+        <p>Esta tag serve para fazer <u>citações</u>.</p>
+        <h4>u</h4>
+        <p>Serve para <u>sublinhar</u>.</p>
+        <h4>mark</h4>
+        <p><u>Marca texto</u> em <mark>amarelo</mark>.</p>
+        <h4>sup</h4>
+        <p>Faz com que o caracter fique <u>elevado em relação à palavra anterior</u> (por exemplo: um asterisco (*) para indicar uma citação).</p>
+
+        <h3 id="listas">Tipos de listas</h3>
+        <small><a href="#voltar">(voltar)</a></small>
+        <p>Existem dois tipos de listas: lista ordenada com números e lista não ordenada com marcadores. 
+           Ambos os tipos são compostos de duas tags, sendo uma tag mãe e outra tag filha, ou seja, <strong>só funcionam juntas</strong>.</p>
+        <ol><li><h4>Lista ordenada com números</h4></li>
+            <p>Tag mãe <u>ol</u> e tag filha <u>li</u></p>
+            <li><h4>Lista não ordenada com marcadores</h4></li></ol> 
+            <blockquote><p>Tag mãe <u>ul</u> e tag filha <u>li</u></p></blockquote>
+
+        <h3 id="links">Links e suas possibilidades</h3>
+        <small><a href="#voltar">(voltar)</a></small>
+        <p>Os links servem para o usuário navegar na internet ou no próprio site. A tag "a" é usada como <strong>âncora</strong> para ir de um lugar para outro 
+            e tem como principal atributo o <u>href</u> onde o link é informado.</p>
+        <h4>Outros atributos para os links</h4>
+        <h5>title</h5>
+        <p>O atributo title cria um comentário que aparece quando o cursor do mouse está <strong>em cima do link</strong></p>
+        <h5>target=</h5>
+        <h6>"_blank"</h6>
+        <p>Abre o link em uma <strong>nova aba</strong> do navegador</p>
+        <h6>"_self"</h6>
+        <p>Abre o link na <strong>mesma aba</strong> do navegador</p>
+        <h4>Dica</h4>
+        <p>Quando o link for de um site próprio, a recomendação é que se abra na mesma aba. Se o destino for um site de terceiros,
+           recomenda-se abrir em outra aba.
+        </p>
+
+        <h3 id="aprofundando">Se aprofundando, principalmente nos Links</h3>
+        <small><a href="#voltar">(voltar)</a></small>
+        <p>Para melhorar ainda mais a experiência do usuário, as tags e/ou atributos a seguir irão ajudar:</p>
+        <h4>hr</h4>
+        <p>Cria uma linha separadora. Ideal para dividir o título do subtítulo</p>
+        <h4>Ancoragem na própria página</h4>
+        <p>No índice, após o href= informar uma hashtag que será a id, sem hashtag, no subtítulo desejado </p>
+        <h4>small</h4>
+        <p>Texto pequeno que pode ser usado como se fosse um botão com link para voltar ao índice </p>
+
+        <h3 id="praticando">Praticando novas tags</h3>
+        <small><a href="#voltar">(voltar)</a></small>
+        <h4>del</h4>
+        <p>A tag del risca uma parte do texto, podendo ser usado para representar uma exclusão. 
+            Exemplo: HTML <del>não</del> é a melhor linguagem de programação </p>
+        <h4>abbr</h4>
+        <p>A tag abbr indica com um comentário uma abreviatura ou sigla. 
+            Exemplo: Posicione o cursor em cima da sigla 
+            <abbr title="HyperText Markup Language — Linguagem de Marcação de Hipertexto">HTML</abbr> e descubra seu nome completo </p>    
+
+        <h3 id="referencias">Links de Referências</h3>
+        <small><a href="#voltar">(voltar)</a></small>
+        <ul>
+            <li><a href="https://pt.wikipedia.org/wiki/Visual_Studio_Code" target="_blank">
+                https://pt.wikipedia.org/wiki/Visual_Studio_Code</a></li>
+            <li><a href="https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#:~:text=A%20tag%20cont%C3%A9m%20metadados,conte%C3%BAdo%20que%20aparece%20na%20p%C3%A1gina." target="_blank">
+                https://www.hostinger.com.br/tutoriais/o-que-e-html-conceitos-basicos#:~:text=A%20tag%20cont%C3%A9m%20metadados,conte%C3%BAdo%20que%20aparece%20na%20p%C3%A1gina.</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Elemento_HTML" target="_blank">
+                https://pt.wikipedia.org/wiki/Elemento_HTML</a></li>
+            <li><a href="https://tableless.github.io/iniciantes/manual/html/oquetags.html" target="_blank">
+                https://tableless.github.io/iniciantes/manual/html/oquetags.html</a></li>
+            <li><a href="https://www.htmlprogressivo.net/2013/08/font-tag-Como-alterar-a-fonte-tamanho-e-cor-de-textos-de-um-website.html" target="_blank">
+                https://www.htmlprogressivo.net/2013/08/font-tag-Como-alterar-a-fonte-tamanho-e-cor-de-textos-de-um-website.html</a></li>
+            <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/del" target="_blank">
+                https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/del</a></li>
+            <li><a href="https://www.totvs.com/blog/developers/o-que-e-html/#:~:text=Sigla%20para%20HyperText%20Markup%20Language,v%C3%ADdeos%2C%20por%20meio%20dos%20hipertextos." target="_blank">
+                https://www.totvs.com/blog/developers/o-que-e-html/#:~:text=Sigla%20para%20HyperText%20Markup%20Language,v%C3%ADdeos%2C%20por%20meio%20dos%20hipertextos.</a></li>
+        </ul>
+             <p>*<a href="https://www.w3schools.com/" target="_blank">
+            https://www.w3schools.com/</a></p>                    
+    </body>
+</html>
