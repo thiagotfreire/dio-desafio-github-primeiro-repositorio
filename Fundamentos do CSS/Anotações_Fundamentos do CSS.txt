@@ -1,0 +1,133 @@
+INTRODUÇÃO AO CSS
+
+APRESENTAÇÃO
+
+O QUE É CSS
+Mecanismo para adicionar estilos
+Determina layout e como elementos do nosso site deve ser
+Atualmente se encontra na versão CSS3
+CSS é uma linguagem de estilos
+Não é uma linguagem de programação (não faz cálculos, por exemplo) e nem de marcação
+
+O QUE PODE SER CRIADO COM CSS
+Layouts e estilização de paginas web
+Animações
+Formas geometricas e desenhos
+Filtros
+Contadores
+
+FORMAS DE DECLARAÇÃO DO CSS
+Propriedade é uma caracteristica de um elemento em nosso HTML (cor de fundo, largura, altura, espaçamento, etc)
+Valor define o resultado de uma propriedade e como o navegador deve exibir o estilo daquele elemento
+propriedade: valor; (Ex.: background: red; color: white;)
+3 formas de declarar o CSS:
+1) CSS Inline: adicionamos o codigo CSS utilizando o atributo style dentro das tags HTML, elemento por elemento
+Style no CSS Inline tem prioridade em comparação com outros estilos
+2) CSS Interno: adicionamos o codigo CSS em uma tag style dentro da tag head da página HTML. Tem que usar seletores (Ex.: h1 {color: white;})
+3) CSS Externo: é criado um arquivo com a extensão .css com todas as regras que queremos aplicar e esse arquivo é referenciado no HTML através da tag link
+Geralmente se cria uma pasta para esses css Externo's chamada assets\css. O arquivo pode se chamar style.css ou outro nome. É só colocar direto.
+No head do HTML, criar tag link rel="stylesheet" href="./assets/css/style.css"
+As paginas HTML ficam menores e mais organizadas. Paginas ficam mais rapidas. Pode utilizar em várias paginas
+
+DEPURANDO O CSS
+Conhecido como debug, é uma forma de identificar problemas no código-fonte e entender seu comportamento usando Dev Tools
+No Dev Tools usa-se bastante os Elements e Styles. Computed tambem
+
+
+SELETORES
+
+SELETOR DE TAGS
+Ou Seletor de Tipo
+
+SELETORES DE ID
+O Id deve ser unico dentro da pagina HTML
+Coloca id dentro da primeira tag sem espaços
+Para usar, em style no head escrever #NOMEID {...}
+
+SELETOR DE CLASSES
+Classes podem ser repetidos na mesma pagina HTML
+Coloca class dentro da primeira tag do conteudo sem espaços
+Para chamar, em style no head escrever .NOMECLASSE {...}
+Pode colocar mais de uma class na tag
+
+SELETOR UNIVERSAL
+É o * (asterisco)
+Aplica para tudo na página
+
+SELETORES DE ATRIBUTO
+Para chamar, em style no head escrever [ATRIBUTO COMPLETO]{...}
+Para selecionar o prefixo de um site: [href^="PREFIXO DO SITE"]
+Para selecionar o sufixo de um site: [href$="SUFIXO DO SITE"]
+Para selecionar a palavra em qualquer posição do site: [href*="PALAVRA"]
+As 3 opções acima se fosse no titulo, é só mudar o href para title
+
+
+COMBINADORES
+
+AGRUPAMENTO DE SELETORES
+No Style no Head, é só separar seletores por virgula antes do {}
+Pode misturar seletores
+Se quiser especificar mais os seletores é só trocar a virgula por ponto
+
+COMBINADOR DESCENDENTE
+Para tags filhas
+Separar por espaço
+Lê a arvore de elementos da esquerda para direita
+
+COMBINADOR FILHO
+Só para filhos diretos
+Separar por >
+
+COMBINADOR IRMÃO
+Irmao adjacente (posto ao lado de):
+Elemento logo depois de uma tag
+Separar por +
+Irmão geral:
+Todos os elementos logo depois de uma tag
+Separar por ~
+
+
+PROPRIEDADES DE DIMENSIONAMENTO E ESPAÇAMENTO
+
+LARGURA E ALTURA
+width: largura: valor+unidade de medida (por exemplo: 200px)
+height: altura
+Dá pra usar tambem auto, initial (valor padrão), inherit (copia do elemento pai)
+
+ALTURA E LARGURA MAXIMA E MINIMA
+min-width, max-width, min-height, max-height
+
+MARGIN
+Cria espaçamento externo em volta dos elementos por fora da borda
+Aceita valores positivos e negativos
+margin-top (em cima), margin-bottom (em baixo), left e right (esquerda e direita)
+margin 1 valor (todos os lados)
+margin 2 valores (em cima e embaixo)
+margin 3 valores (em cima, laterais, embaixo)
+margin 4 valotes (em cima, direita, embaixo, esquerda) (sentido horário)
+inherit (copia do elemento pai)
+auto (funciona de forma horizontal e pode colocar margin para vertical)
+
+PADDING
+Espaçamento interno
+Para texto não ficar muito junto do elemento
+Funciona da mesma forma que o margin em quantidade de valores
+
+BOX SIZING
+Tem dois valores: Content-box ou Border-box para redimensionar baseado na altura e largura total
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

@@ -1,0 +1,24 @@
+CRIANDO SEU PRIMEIRO SITE COMPLETO COM HTML
+*Formularios (campos, textarea, selectbox)
+*Estruturação (div's) e formatação de texto (strong, etc)
+*Midias (img, video, audio)
+*Tabelas (uma tabela de horário)
+*Contato (Endereço completo, telefone, formulário de e-mail e Google Maps mostrando exatamente a localização da clínica)
+*DADOS FAKES
+*No Menu, ficará os links para as páginas. Igual para todas as paginas
+*No Header ficará uma imagem como banner. Pode colocar mudar por página. Na página principal pode ser o logotipo. Usar tag img. Na pagina Sobre a clinica, Horario de Atendimento e Contato, deve ter outras imagens diferentes
+*No Footer: Endereço completo, telefone, e-mail. Igual para todas as paginas
+*Content: vai mudar de página pra página. Caprichar na primeira página e depois é só copiar e colar no explorador do VS Code pra mudar o Content. Na página principal um sobre nós, colocar h1, tag p, i, strong, ou seja, formatar texto. Na pagina sobre a clinica, outro texto (exemplo: adjetivos, o que tem na clinica, etc). Na tabela de horario, usar tags table, tr, header, th, td, etc, fazer o CSS tambem
+*Pode trocar cores do template
+*São 4 páginas e tem que se navegar entre elas através do menu, sempre na mesma aba do navegador. Se tiver links que nao sao do site, mandar para outra janela do navegador
+
+https://www.tailorbrands.com/pt-br
+https://onlinepngtools.com/create-transparent-png
+https://www.resizepixel.com/pt
+
+
+
+
+
+
+

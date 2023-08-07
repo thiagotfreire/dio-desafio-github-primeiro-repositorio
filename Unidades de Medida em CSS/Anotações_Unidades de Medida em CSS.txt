@@ -1,0 +1,67 @@
+UNIDADES DE MEDIDAS ABSOLUTAS
+
+APRESENTAÇÃO DO CURSO
+
+UNIDADES DE MEDIDAS NO CSS
+Podem ser absolutas ou relativas
+Classificação de tipos numéricos de valores
+<integer> Valores inteiros, positivos e negativos
+<number> Valores decimais. Pode contar ou não casa decimal
+<percentage> Valores que representam uma fração de algum outro valor
+<dimension> Valores numéricos com un. de medida atrelada:
+lenght (representa distância [px; em; vw; in (polegada)]
+angle (representa angulos [deg; rad (radianos); grad; turn]
+time (expressam tempo [s; ms (milisegundos)])
+resolutions (descrevem resoluções para dispositivos [dpi; dpcm; dppx])
+
+UNIDADES DE MEDIDAS ABSOLUTAS
+São tamanhos que não estão atrelados com nenhum valor de referência, ou seja, nao depende de nenhum outro valor para ser calculada
+São fixas e não mudam por dispositivo ou tamanho de outro elemento
+Usa-se quando se conhece o dispositivo
+cm (centimentros), mm (milimetros), Q (quarto de milimetro), in (polegadas), pc (paica), pt (pontos), px (pixels)
+A mais utilizada é Pixels
+
+PIXELS FÍSICOS E LÓGICOS
+Os pixels físicos ficam dentro dos pixels lógicos
+
+
+UNIDADES DE MEDIDAS RELATIVAS
+
+O QUE SÃO UNIDADES DE MEDIDA RELATIVAS?
+As unidades de medidas relativas são calculadas com base em unidades já conhecidas de um outro elemento, o que faz com que o resultado possa variar de acordo com o 
+valor da propriedade do elemento no qual estamos nos baseando
+
+PORCENTAGEM
+Se porcentagem tiver dentro do body e body crescer a area da porcentagem crescerá tambem e assim por diante
+
+UNIDADE DE MEDIDA EM
+Utiliza como referência o valor da propriedade font-size do elemento pai no qual está inserido (MULTIPLICAÇÃO)
+
+UNIDADE DE MEDIDA REM
+O rem (root em) tem um funcionamento semelhante ao em, porém a diferença é que o rem está relacionado ao tamanho da fonte do elemento raiz chamado root que no caso é
+a tag html. Por padrão é 16px
+
+DIFERENÇA ENTRE REM E EM
+Vantagens de utilizar EM e REM: facil manutenção, responsivos e controle de escala pelos navegadores
+Uso do REM: tamanhos consistentes e melhor experiência do usuário
+No mercado usa mais o REM
+
+VIEWPORTS
+É a área visível de uma página web podendo variar de dispositivo para dispositivo. 
+1vw = 1% (width) (largura)
+1vh = 1% (height) (altura)
+vmin = considera menor valor entre largura e altura
+vmax = considera maior valor entre largura e altura
+
+UNIDADE DE MEDIDA EX E CH
+Não são comumente usadas
+EX: irá usar o tamanho da altura do caractere X (em minusculo) da fonte do elemento
+CH: possui como referencia o caractere 0 (zero) da fonte que está sendo utilizada no elemento
+
+CALCULANDO VALORES COM CSS
+Função calc()
+Os operadores matemáticos tem que estar separados por espaços
+
+
+
+

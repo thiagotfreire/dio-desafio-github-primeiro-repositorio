@@ -1,0 +1,50 @@
+APRESENTAÇÃO
+Tags form, input, checkbox, radio, button, select, textarea
+
+TAG FORM
+Quando clicar em enviar vai enviar para o servidor
+O atributo name é para conseguir validar por JavaScript depois
+Atributo action serve para informar o destino dos dados
+Atributo method post serve para não mostrar os dados no endereço do site
+Atributo target blank para abrir em outra aba
+Atributo autocomplete serve para autocompletar dados que usuario pediu para salvar no navegador
+Todas as tags que começou com on são eventos. Onsubmit = alert com texto
+
+TAG INPUT
+Tem diversos tipos
+Text, label
+Range
+Eamil
+URL
+Checkbox: perguntas boleanas, mas pode selecionar as duas opções
+Radio: perguntas boleanas, mas só pode selecionar uma opção
+Hidden: fica invisivel para usuario
+File: dá pra escolher arquivo. Com multiple pode selecionar mais de um arquivo
+
+CHECKBOX E RADIO
+Chechbox é para multiplas selecões. O atributo tem que ser um nome para todas as opcoes com [] no final. O form tem que estar com method="post"
+Radio não é multiplo valores. O atributo tem que ser o mesmo nome e value cada opção
+
+BUTTON E SEUS TIPOS
+Button Type Button: cria um botão. Com onclick e onmouseover dá pra colocar comentário
+Button Type Reset: limpa dados do form
+Button Type Submit: envia o formulario. Se clica no ENTER no formulario ja envia.
+
+SELECT E SEUS TIPOS
+Serve para criar algo como se fosse uma lista suspensa. SELECT é tag mãe, option é tag filha
+Com selected ja aparece a opção escolhida, mas dá pra mudar
+No select, alem name="role", pode colocar o parametro multiple para selecionar mais de uma opção
+
+TEXTAREA
+Campo maior que os outros
+Se colocar com atributo rows, dá para informar quantidade de linhas e cols a quantidade de colunas (Exemplo: 10 e 50)
+
+
+
+ 
+
+
+
+
+
+

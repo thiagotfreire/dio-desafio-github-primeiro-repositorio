@@ -1,0 +1,46 @@
+SOBRE TABELAS
+Linhas, colunas e células
+
+TAG TABLE
+A tag table é a tag avó. tr é tag mãe para cada linha 
+Tag filhas:
+td: colunas. Pode ser várias
+Atributos da tag table (exemplos): summary="Esta tabela se refere às idades da turma A da Dio" (é uma descrição do resumo/explicação, não aparece na página, mas leitor de tela de acessibilidade lê essa informação),  border="1" (estiliza depois via CSS), width="250" (largura), cellspacing="0 ou 5, etc" (dá espaçamento entre as celulas), cellpadding="15" (dá espaçamento horizontal dentro da celula), align="center" (centraliza tabela na página)
+
+TAG TR
+Significa Tag Row (linha da tabela)
+Na head, dentro de uma tag CSS chamada style pode colocar:
+1) table tr:nth-child(even) {background-color: COR;} (nas linhas pares faz zebrado)
+2) table tr:hover td {background-color: COR;} (quando passar o mouse na tabela vai aparecer a cor selecionada)
+Com exceção do cabeçalho, nas outras tr pode colocar atributo id="X" que vai ajudar depois no CSS
+
+TAG TD E TH
+th é o cabeçalho
+Para cabeçalho não ficar muito grande, pode colocar atributo title com Nome Completo que aparecerá como comentário
+
+TAG THEAD, TBODY E TFOOT
+Serve para agrupar em Cabeçalho, Corpo e Rodapé
+Tag caption: título da tabela. Aparece na página e leitor de tela também lê
+*HTML que se preocupa com questões de Acessibilidade
+
+ESTILIZANDO TABELAS
+Atráves do CSS
+Tirar border
+Na head, dentro de uma tag CSS chamada style pode colocar:
+1) table {border: solid ou dashed ou dotted 1 px black ou gray;} (colocar borda externa)
+2) table thead th {background-color: black; color: white;} (colocar cor no cabeçalho)
+3) table tfoot td {background-color: COR lightgray;} (colocar cor no rodapé)
+4) table tbody tr:nth-child(even) td {background-color: #f1f1f1;} (nas linhas pares faz zebrado)
+5) table tbody tr:hover td {background-color: #E9E9E9; cursor: pointer} (quando passar o mouse na tabela vai aparecer a cor selecionada; cursor vira mãozinha)
+Pesquisando no Google: box shadow generator, no primeiro link é possível criar uma sombra de tabela, copiar o codigo e colar dentro de uma tag table {} dentro de uma tag CSS style
+O atributo colspan="2" serve para mesclar 2 células em 1 e assim por diante na horizontal
+Já o atributo rowspan serve para mesclar célular em 1 na vertical
+
+
+09 as 20
+09 as 14
+Fechado<
+
+
+
+

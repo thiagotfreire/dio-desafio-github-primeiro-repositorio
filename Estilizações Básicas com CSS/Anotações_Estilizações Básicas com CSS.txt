@@ -1,0 +1,343 @@
+APRESENTAÇÃO
+
+CORES
+Existem cerca de 140 cores pré-definidas por nome
+*w3schools tem uma lista com todas cores
+Fundo transparente: transparent
+Se quiser que a borda seja da mesma cor da letra: color: {NOMEDACOR; border: 2x (espessura) solid (linha contínua) currentcolor;}
+
+RGB E RGBA
+Red, Green e Blue
+{color: rgb(0 à 255, 0 à 255, 0 à 255);} ou 0 à 100% (não é muito comum)
+RGBA para ter transparência (é o quarto valor, vai de 0.0 à 1.0) (pode emitir o primeiro 0 ou só deixar 1)
+
+HEXADECIMAL
+#+6digitos (seguindo sequencia RGB de 0 a 9, à a à f) (F é o valor mais alto)
+Para transparencia colocar mais 2 digitos sendo 00 totalmente transparente e FF totalmente intenso)
+
+HSL E HSLA
+Hue, Saturation, Lightness
+Matiz, Saturação, Luminosidade
+Hue (Matiz) de 0 à 360, sendo 0 ou 360 vermelho, 120 verde e 240 azul
+Saturation (Saturação) de 0 à 100%, sendo 0 um tom de cinza e 100% cor total desejada
+Lightness (Luminosidade) de 0% é preto, 100% é branco. Dá brilho
+Para transparência, é HSLA, aceita 0.0 à 1.0 (pode emitir o primeiro 0 ou só deixar 1)
+
+*Mais comum: 90% hexadecimal ou RGB/RGBA
+ 
+
+IMAGENS
+
+PROPRIEDADE OBJECT-FIT
+Como imagem ou video vai ser redimensionada dentro de um container
+Na tag HTML img id="fill" é padrão. No src="" colocar o caminho da imagem. Acima em uma tag HTML code: object-fit: fill; (RESPEITA TAMANHO DEFINIDO PARA A IMAGEM, PODE DISTORCER IMAGEM)
+ou
+Na tag HTML img id="contain". Acima em uma tag HTML code: object-fit: contain; (RESPEITA TAMANHO DEFINIDO PARA IMAGEM SEM DISTORCER)
+ou
+Na tag HTML img id="cover". Acima em uma tag HTML code: object-fit: cover; (RESPEITA TAMANHO DEFINIDO PARA A IMAGEM, NÃO DISTORCE IMAGEM, MAS PODE CORTAR O QUE FOR A MAIS)
+ou 
+Na tag HTML img id="none". Acima em uma tag HTML code: object-fit: none; (RESPEITA TAMANHO DEFINIDO PARA A IMAGEM E USA TAMANHO ORIGINAL DA IMAGEM, PODENDO CORTAR)
+ou
+Na tag HTML img id="scale-down". Acima em uma tag HTML code: object-fit: scale-down; (USA CONTAIN OU NONE, DOS DOIS O MENOR)
+
+PROPRIEDADE OBJECT-POSITION
+Serve para definir como imagem ou video vai ser posicionado tanto horizontalmente quanto verticalmente no container
+O valor padrão é {object position: 50% 50%}, sendo a ordem horizontal e vertical
+Dá para usar outras unidades de medida
+Distancia dos lados e topo/rodapé
+Aceita valores negativos e algumas palavras chaves (left, center, right, top, center, bottom, start, end)
+Utiliza-se mais %, px ou palvras chave (left, center, right, top, bottom)
+
+
+FUNDO DOS ELEMENTOS
+
+ALTERANDO O FUNDO DOS ELEMENTOS
+Propriedade: background-image com a função url: background-image: url('../images/ARQUIVO'); (PODE COLOCAR MAIS IMAGENS, COMO SE FOSSEM OUTRAS CAMADAS)
+Todos formatos de imagens são aceitos
+Outra função é linear-gradient(lightpink, red); (COMEÇA DE UMA COR EM CIMA E TERMINA COM OUTRA EMBAIXO, PODE COLOCAR MAIS CORES)
+*IDEAL MESMA PALETA DE CORES
+Função radial-gradient (COMEÇA COM UMA COR NO CENTRO E VAI EXPANDINDO CIRCULARMENTE)
+Função repeating-linear-gradient(to top, COR QUE COMEÇA 0 20px, PROXIMA COR 20px 40px) (DEPOIS ELE SE REPETE)
+*Site com vários efeitos: projects.verou.me/ccs3patterns
+
+REDIMENSIONANDO AS IMAGENS DE FUNDO DOS ELEMENTOS
+Propriedade: background-size
+Funções:
+Auto: imagem de fundo se ajusta automaticamente
+Cover: imagem de fundo ocupa todo espaço, mas se for grande pode cortar
+*Pode perder qualidade
+Contain: redimensiona para caber completamente no espaço da div
+Outras funções:
+Único valor direto em px ou % para largura
+Dois valores direto em px sendo primeiro valor largura e segundo valor altura (pode ser px ou %)
+Mais de uma camada: pode usar uma função para cada separando por virgula (exemplo: contain, cover)
+
+REPETIÇÃO DAS IMAGENS DE FUNDO
+O padrão é repetir a imagem, mas dá para alterar isso
+Propriedade: background-repeat
+Funções: 
+repeat: repete tanto horizontal, quanto verticalmente
+repeat-x: só repete na horizontal (eixo x)
+repeat-y: só repete na vertical (eixo y)
+space: repete tanto horizontal, quanto verticalmente, sem cortar pode conta de espaços
+round: repete em todas as direções, sem cortar, redimensiona
+no-repeat: não deve ser repetida
+Pode colocar um valor ou função para horizontal e outro para vertical
+
+POSICIONAMENTO DAS IMAGENS DE FUNDO
+Propriedade: background-position
+Funções/Valores: bottom, top, left, right, center, valores em px ou % a partir do elemento sendo primeiro valor na horizontal e segundo na vertical, funções e valores
+
+PROPRIEDADE BACKGROUND ATTACHMENT
+Determina como o fundo do elemento vai ser movimentar em relação à janela do navegador
+Valores:
+fixed: imagem de fundo fica fixa mesmo que rolar a página
+scrool:
+local: 
+
+PROPRIEDADE BACKGROUND ORIGIN
+Define o ponto de origem de uma imagem de fundo
+Valores:
+padding-box: padrão, cobre a area do elemento (ex: 30px), sem cobrir borda
+border-box: cobre a area da borda
+content-box: não cobre a borda e nem a area do elemento
+
+PROPRIEDADE BACKGROUND CLIP
+Valores:
+padding-box: padrão, cobre a area do elemento (ex: 30px), sem cobrir borda
+border-box: cobre a area da borda
+content-box: não cobre a borda e nem a area do elemento
+text: aplica fundo na fonte (tem que adicionar funções -webkit-background-clip: text; e color: transparent;)
+
+MESCLAGEM
+Mescla image (background-image) com cor (background-color)
+Propriedade: background-blend-mode
+Funções/valores: normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color e luminosity
+*DEPENDE MUITO DA COR E DO FUNDO PARA TER RESULTADOS
+*Site: codepen.io
+
+PROPRIEDADE BACKGROUND
+Exemplos (separados por espaços): url('CAMINHO') [imagem], [position, size], no-repeat [repeat], fixed [attachment], padding-box [origin], content-box [clip], red [color]
+Camadas tem de ser separadas por virgula
+
+
+BORDAS
+
+TAMANHO DA BORDA
+Propriedades:
+border-width: valores em px ou thin (1px), medium (3px), thick (5px). Separando valores por espaço, dá pra definir o primeiro valor para vertical e o segundo para horizontal. Demais lado é sentido horário
+border-style: estilo da borda (ex.: solid)
+
+ESTILO DA BORDA
+Propriedade: border-style
+Valores: none, dashed, dotted, double, groove, ridge, inset, outset
+
+COR DA BORDA
+Propriedade: border-color
+Padrão é a cor do texto
+
+PROPRIEDADE BORDER
+Dá pra definir tudo de uma vez espessura, estilo, cor, separados por espaço
+Dá especificar lado usando as seguintes propriedades: border-bottom, border-left, border-right, border-top. Dá pra acrescentar o -style, -width nessas propriedades
+
+ARREDONDANDO OS CANTOS COM A PROPRIEDADE BORDER RADIUS
+Propriedade: Border Radius
+Valores em px ou %
+Usando barra (/) entre os valores, o arredondamento fica oval
+50% com px do elemento quadrado cria um círculo. Se for o elemento não for quadrado, cria uma forma oval
+
+PROPRIEDADE BORDER IMAGE SOURCE
+Serve de atalho para propriedade border-image: -source, -width, -repeat, -outset e -slice
+Funções:
+-source: url(''); [tem que já ter borda], linear-gradient(CORES POR VIRGULA); nome (padrão)
+
+PROPRIEDADE BORDER IMAGE SLICE
+Slice significa fatias
+Dá pra usar numeros, porcentagens ou fill
+Testrar pelo Dev Tools
+Usar propriedade border-image-repeat: repeat
+Valor fill preenche a fatia 9 no meio
+Dá pra fazer linear-gradient no -source e não precisa do -repeat
+
+PROPRIEDADE BORDER IMAGE WIDTH
+Valores em px ou %
+
+PROPRIEDADE BORDER IMAGE REPEAT
+Valores: 
+stretch: estica as fatias que não são cantos
+round: evita cortar imagem
+space: adiciona espaços
+
+PROPRIEDADE BORDER IMAGE OUTSET P1
+Valores positivos em px
+Afasta conteudo da borda
+
+PROPRIEDADE BORDER IMAGE OUTSET P2
+Propriedade resumida para todas da Border Image: border-image: url('') [source ou gradient] 169 / 10px / 1 (slice/largura da imagem/outset) round 
+
+
+FONTES
+
+ONDE ENCONTRAR FONTES PERSONALIZADAS?
+Tipos genéricos/grupos de fontes: 
+Serif: traços no final das letras (exemplo: Times New Roman e Georgia)
+Sans-serif: não tem traços no final das letras (exemplo: Arial)
+Display: Enfeitadas, bom para textos curtos, para chamar atenção, para titulos
+Handwriting: fontes manuscritas, cursivas, parece que foi feito a mão
+Monospace: todos os caracteres ocupam a mesma largura
+Google Fonts: catalogo de fontes gratuito. Olhar licença
+
+PERSONALIZANDO AS FONTES DO NOSSO SITE
+Propriedade font-family pode colocar a familia (se for handwriting é cursive) ou fonte especifica
+Arquivo style.css a parte e usar tag link
+Asterisco aplica em todo mundo
+
+APLICANDO FONTES PERSONALIZADAS COM @FONT-FACE
+Regra CSS @font-face{}
+Font-weight: bold (para negrito)
+
+APLICANDO FONTES PERSONALIZADAS COM @IMPORT URL()
+
+ALTERANDO O TAMANHO DAS FONTES COM FONT-SZE
+Propriedade font-size
+
+ESTILO DE FONTES (FONT-STYLE)
+Italic, Oblique ou normal (padrão)
+
+ESPESSURA DAS FONTES COM FONT-WEIGHT
+Aceita valores de 100 à 900, mas nem todas as fontes tem todos os valores (700 = bold). De lighter a bolder
+
+VARIAÇÃO DAS FONTES COM FONT-VARIANT
+Define se texto será exibido em formato versalete (small caps): tudo maiuscula mas tamanho é menor de quando está em caixa alta de fato
+Valores: normal ou small-caps
+
+PROPRIEDADE FONT-STRETCH
+Não funciona em todas as fontes
+De ultra-condensed a ultra-expanded
+
+CUSTOMIZANDO A ALTURA DA LINHA COM LINE-HEIGHT
+Espaçamento entre linhas
+Aceita valores e %
+
+PROPRIEDADE RESUMIDA FONT
+Em uma unica linha propriedades: -style, -variant, -weight, -size/line-height, -family
+Font-size e font-family são obrigatórios, se não é colocado padrão
+Separados por espaço
+
+
+TEXTOS
+
+PROPRIEDADE TEXT-TRANSFORM
+É responsável por definir quais caracteres vão estar em maiusculo, minusculo, etc
+Valores:
+none (do jeito que escrever no HTML será exibido)
+capitalize (primeiro caracter fica maiusculo)
+uppercase (tudo fica caixa alta)
+lowercase (tudo fica caixa baixa)
+initial (padrão)
+inherit 
+
+PROPRIEDADE TEXT-ALIGN
+Alinha texto dentro de um elemento
+Valores:
+left, right, center, justify
+
+PROPRIEDADE TEXT-DECORATION
+Adiciona ou remove linhas no texto: sejam linhas em cima, no meio ou embaixo
+Valores:
+none (nada)
+underline
+line-through (linha no meio)
+overline (linha em cima)
+É uma propriedade abreviada de -line, -style, -color e -thickness (dá pra escrever tudo em uma linha separado por espaço)
+-line: é o padrão, que adiciona ou remove linhas
+-style: solid, double, dotted, dashed, wavy
+-color: 
+-thickness (espessura da linha): px
+
+PROPRIEDADE TEXT-IDENT
+Define recuo na primeira linha como se fosse um paragrafo em px positivos ou negativos
+
+PROPRIEDADES LETTER-SPACING E WORD-SPACING
+Letter-spacing: adiciona espaçamento entre cada caracter do texto
+Word-spacing: adiciona espaçamento entre cada palavra do texto
+Valores:
+normal ou px positivos ou negativos
+
+PROPRIEDADE WHTIE-SPACE
+Define como espaços em branco do texto é tratado
+Valores
+normal (dá um espaço só e quebra de linha ocorre conforme o tamanho do elemento)
+nowrap (dá um espaço só e não quebra linha, fica tudo em uma linha)
+pre (espaços em brancos e as quebras de linhas ficam iguais o código)
+pre-line (dá um espaço só e quebra linha conforme o tamanho do elemento e o código)
+pre-wrap (espaços em brancos igual o código e quebra linha conforme o tamanho do elemento e o código)
+break-spaces (espaços em brancos igual o tamnho do elemento e código e quebra linha conforme o tamanho do elemento e o código)
+
+PROPRIEDADE WORD-WRAP
+Define caso uma palavra seja muito grande para caber em uma linha se ela será quebrada em qualquer caractere para que uma parte dela fique na linha e o restante na próxima, ou se não, toda palavra deve ficar na mesma linha e ultrapassar os limites que definimos para o elemento
+Valores
+normal (ultrapassa limite do elemento)
+break-word (quebra palavra dentro do elemento)
+
+PROPRIEDADE WORD-BREAK
+Define quando o texto deve ter uma quebra de linha
+Valores
+normal
+break-all: Aproveita todo espaço do elemento e quebra linha conforme elemento
+keep-all: para idiomas orientais não ser quebrados, para outros idiomas fica normal
+
+PROPRIEDADE WRITING-MODE
+Define orientação do texto (vertical ou horizontal)
+Valores
+horizontal-tb (padrão)
+vertical-rl (fica na vertical para ler da direita para esquerda) (vira em 90 graus)
+vertical-lr (fica na vertical tambem porem a partir do lado esquerdo com as linhas em ordem descrescente)
+
+PROPRIEDADE TEXT-OVERFLOW
+Define como mostrar para o usuario que tem mais coisa para ler alem do que se está vendo agora
+Valores
+clip (padrão) (texto é cortado e não se acresenta nada no final)
+ellipsis: acrescenta automaticamente os 3 pontinhos
+string: pode acrescentar palavra personalizado, caracter (só funciona no navegador Firefox)
+
+
+SOMBRAS
+
+EFEITO DE SOMBRA NOS ELEMENTOS
+Propriedade box-shadow
+Valores: px px (horizontal e vertical) TERCEIRO VALOR É PARA DESFOQUE cor (inset antes dos valores faz parecer que foi clicado)
+Propriedade filter: drop-shadow(VALORES) (cria sombra nos elementos de uma imagem transparente em png)
+
+EFEITO DE SOBRA NOS TEXTOS
+Propriedade text-shadow
+Valores: px px TERCEIRO VALOR PARA DESFOQUE cor
+
+
+OUTROS
+
+APLICANDO TRANSPARÊNCIA AOS ELEMENTOS
+Propriedade opacity (define nivel de opacidade (transparência) de um elemento como um todo)
+Valores de 0 à 1
+
+PROPRIEDADE OVERFLOW
+Controla como conteudo deve ser exibido caso ultrapasse os limites do container/elemento
+Valores
+visible: padrão (conteudo não é cortado e é exibido mesmo que ultrapasse o elemento)
+hidden: conteudo corta para caber dentro do elemento e apaga o resto
+scroll: cria scroll para ver o que foi cortado
+auto: só cria barra de rolagem se realmente precisar
+Essa propriedade overflow só funciona em elementos em bloco e com a altura especificada
+Pode colocar eixo no titulo da propriedade: -x é horizontal e -y é vertical
+
+REDEFININDO AS PROPRIEDADES PADRÕES DOS NAVEGADORES
+Reset CSS é uma folha de estilos que irá sobrepor todas as propriedades de estilo CSS que os navegadores colocam por padrão nos elementos, ajudando com que os sites tenham o mesmo design em todos os navegadores
+Podemos criar nosso próprio arquivo ou achar pronto na internet. O mais famoso é do Eric Meyer
+Criando um do zero pode ter: * {padding: 0; margin: 0; vertical-align: baseline; list-style: none; border: 0;} [pode acrescentar mais coisas depois}
+Se tiver style.css dá pra fazer @import url('./reset.css'); na primeira linha
+ 
+
+
+
+
+

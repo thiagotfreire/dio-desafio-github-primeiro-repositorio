@@ -1,0 +1,56 @@
+APRESENTAÇÃO
+Formatar documentos, textos, fontes
+Preparar para CSS
+Conhecer mais sobre cores no HTML
+
+FORMATANDO TEXTOS - PARTE 1
+Italico <i>: citações, girias
+<strong> ou <b>: Negrito
+<u>: Sublinhado
+<mark>: marca texto
+<sup>: caracter elevado
+<sub>: caracter em baixo
+<blockquote>: dá espaçamento do lado esquerdo. Pode ser uma explicação de alguma coisa
+Lorem*3: texto aleatorio
+Semântica: forma de estruturar o HTML de forma que olhando para o HTML sabe-se o que o trecho quer dizer dando ênfase. Ajuda na Acessibilidade. Exemplo: strong ao inves do negrito 
+
+FORMATANDO TEXTOS - PARTE 2
+<font>: sozinha não faz nada, precisa de atributos
+Atributos:
+color
+face: fonte. Pode colocar mais de uma separada por virgula. Quando for nome composto colocar entre aspas simples (ex.: 'Trebuchet MS')
+*Letra ceifada: em baixo da letra parece ter uma linha
+*HTML: esqueleto; CSS: aparência; JavaScript: musculos
+
+DIV E SPAN
+Tags coringas para estruturar HTML pra deixar preparado para o CSS. Essa estrutura tem que ser pensada antes de começar o codigo.
+Div: são "retangulos" estruturados. É uma Display: Block, ou seja, ocupa toda a horizontal
+Span: serve para formatar no meio de um termo (só assim para conseguir formatar no CSS) e em vários lugares de uma vez só
+
+FIELDSET
+Deixa site mais atraente
+Na div, class "row" significa dois campos na mesma linha (como se fossem duas colunas)
+Label fica do lado de um campo
+Fieldset serve para delimitar formulario por partes (ex.: dados pessoas, informações de contato, etc). Com Legend coloca titulo.
+*Identar texto: deixar HTML alinhado
+
+EMBEDS
+Não se usa mais. Servia para colocar uma midia (flash, video, imagem) no conteudo
+De forma semantica para video é melhor assim: tag video com atributos controls autoplay e dentro tag source com atributo src=caminho interno ou externo do video
+
+IFRAMES
+Tem que tomar cuidado com segurança (PESQUISAR DEPOIS SEGURANÇA JAVASCRIPT IFRAME)
+Permite abrir conteudo na minha pagina de outra pagina, site inteiro inclusive
+
+RESENHA SOBRE CORES
+CSS usa muita cor
+www.w3schools.com/tags/ref_colornames.asp
+Alem do nome das cores em ingles, pode escolher pelo seguintes valores: RGB, HEX, HSL, RGBA ou HSLA
+
+
+
+
+
+
+
+

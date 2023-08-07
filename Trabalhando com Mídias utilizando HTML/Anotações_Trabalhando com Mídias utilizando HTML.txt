@@ -1,0 +1,33 @@
+APRESENTAÇÃO
+
+O QUE SÃO TAGS DE MÍDIAS
+Som ou imagem
+
+TAG IMG
+Img com atributo src para caminho do computador ou da internet
+JPG comprime mais e perde muito recurso. PNG é melhor, tem transparência (sem fundo)
+Exemplo: JPG para galeria de foto. PNG é melhor para logo
+SVG é vetorial e qualquer tamanho que colocar nao perde resolução. Tem tag propria SVG
+Atributo title: comentário da foto
+Atributo alt: descrição detalhada da imagem para pessoas que precisam de acessibilidade
+*Programa NVD: faz leitura de paginas para quem precisa de acessibilidade
+*Atributo align: alinha a imagem dentro de um texto
+
+TAG AUDIO
+Audio é tag mãe com atributo controls. Atributo autoplay serve para a musica dar play automático. Source é tag filha com atributo src
+Colocar abaixo o texto: Seu navegador não tem suporte para este áudio
+
+TAG VIDEO
+Bem semelhante a tag Audio
+Video é tag mãe com atributo controls. Source é tag filha com atributo src
+Pode colocar em outras linhas outros formatos de video além do mp4 como webm
+Colocar abaixo o texto: Seu navegador não tem suporte a vídeo
+
+TAG TRACK
+Auxiliar ao video, é uma tag filha da tag mãe video.
+Track é legenda
+O arquivo de legenda é vtt, tem que seguir o padrão e pode ser feito até no bloco de notas
+A tag tem 3/4 atributos: src que é o caminho da legenda; kind="captions" (tem outras opções, todas servem para quem precisa de acessibilidade); srclang: en (ingles). Pode colocar outras linhas com outras src e src lang (exemplo: legenda-pt-br.vtt e pt-br). O 4º atributo é opcional pois serve para definir qual dessas linhas é a default.
+
+TAG IFRAME
+Permite abrir conteudo na minha pagina de outra pagina, site inteiro inclusive
