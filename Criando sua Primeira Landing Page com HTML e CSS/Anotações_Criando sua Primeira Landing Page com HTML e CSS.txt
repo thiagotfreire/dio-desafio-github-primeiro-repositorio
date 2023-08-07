@@ -1,0 +1,18 @@
+DESAFIO
+Imagem de fundo tem que estar fixa para fazer efeito de quando rolar a pagina a imagem continuar fixa mas o texto "transforme o mundo com a gente com sombra" role
+No rodape o dio.me é um link que clicando tem que abrir o site da dio.me
+Tem prototipo no Figma (Em Inspect é importante: espessura e cor da borda, tamanho da imagem, se tem opacidade ou não, texto com linear gradiente (TRILHA DE CSS DA DIO))
+Para Google Chrome entender esse linear gradiente no html tem que estar: -webkit-background-clip: text; (MAIS OUTRAS PROPRIEDADES APRENDIDAS NA AULA)
+Github:
+Na pasta images tem todas imagens
+Tem index.html pronto, uma coisa que vou mexer em relação ao HTML é linkar arquivo css para que entenda de onde está referenciando arquivo css
+EVITAR AO MAXIMO MEXER NO HTML
+Tem branch final com o projeto finalizado
+PARA COMEÇAR:
+Dá fork do Github da Dio para meu pessoal, selecionar meu usuario, desabilitar copy the main branch only, criar fork
+Dá para hospedar meu projeto: na pagina do nosso repositorio em settings, pages, em source: deploy from a branch, branch main, save. Depois na pagina do repositio em
+Actions quando deply ficar verde já pode usar o link
+
+Github: https://github.com/digitalinnovationone/trilha-css-desafio-01
+Figma: https://www.figma.com/file/3PiokoJj9IhGDnNiWAJbz7/DIO---Desafio-01?node-id=0%3A1
+
