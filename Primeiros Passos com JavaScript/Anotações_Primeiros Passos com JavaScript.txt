@@ -1,0 +1,59 @@
+VARIÁVEIS E OPERADORES
+
+APRESENTAÇÃO INICIAL
+Sempre teremos 3 arquivos: aula.js, desafio e resolução do professor
+Criar pasta do curso, da aula e arquivo aula.js
+Novo terminal em bash
+
+CONSOLE E COMO DECLARAR VARIÁVEIS
+No terminal: $ node aula.js
+No código: console.log('Imprimir algo');
+Quando chamar $ node aula.js no terminal, aparecerá o Imprimir Algo
+Variaveis são espacinhos para guardar valores para usar depois
+let NOMEVARIAVEL = VARIAVEL; (pode mudar valor. Para mudar NOMEVARIVAVEL = NOVAVARIAVEL;)
+const NOMEVARIAVEL = VARIAVEL; (valor unico, constante. Para mudar tem que alterar na const)
+
+DIFERENÇA ENTRE VARIÁVEIS E TIPOS DE OPERADORES
+Para imprimir a varíavel, é só mudar dentro do console.log
+Tem que seguir sequência logica, pode imprimir mais de um basta cada um ter seu console.log
+No let depois do igual (=) pode fazer operações matemáticas (+-*/)
+
+RESOLUÇÃO GUIADA DO EXERCICIO - PARTE 1
+
+
+RESOLUÇÃO GUIADA DO EXERCICIO - PARTE 2
+Para fazer arredondamento: console.log(VARIAVEL A SER IMPRESSA.toFixed(2));
+
+
+ESTRUTURAS CONDICIONAIS
+
+CONCEITO DE BOOLEAN E CONDICIONAIS
+Boolean representa Verdadeiro e Falso (0 e 1)
+Condicional tenta ver se uma situação é Verdadeira ou Falsa
+
+EXEMPLO COM RESTO DE DIVISÃO
+operador % significa resto da divisão (TENTO DIVIDIR POR 2, SE SOBRAR RESTO NA DIVISÃO É IMPAR, SE NÃO SOBRAR RESTO NA DIVISÃO É PAR)
+(SE FOR IGUAL A ZERO ELE É PAR, SE FOR MAIOR QUE ZERO ELE É IMPAR)
+% SIGNIFICA É DIVISIVEL
+
+TIPOS DE OPERADORES DE IGUALDADE
+=== significa igualdade
+
+ESTRUTURA CONDICIONAL COM IF E ELSE
+if (VARIAVEL) {
+console.log('IMPRIME ALGO VERDADEIRO');
+} else {
+console.log('IMPRIME ALGO FALSO');
+}
+
+ESTRUTURA CONDICIONAL COM ELSE IF
+if (numero === 0) {
+console.log('O número é inválido');
+} else if (numeroDivisivelPor5) {
+console.log('Sim');
+} else {
+console.log('Não');
+}
+
+REVISÃO E DICAS DE BOAS PRÁTICAS
+is na frente (é)
